@@ -1,0 +1,89 @@
+			html,body{ height:100%;}
+			
+			#calendar{
+				display:inline-block;
+				overflow:auto;
+				width:222px;
+				padding:8px;
+				border:1px solid black;
+				border-radius: 8px;
+			}
+			
+			#calTopBar{
+				width:100%;
+				text-align:center;
+				height:20px;
+				overflow:auto;
+				display:inline-block;
+				margin:0 0 5px 0;
+			}
+			
+			#calPrevMonth, #calNextMonth{
+				margin:5px 0 0 0;
+				cursor:pointer;
+			}
+			
+			#calPrevMonth{ float:left; }
+			#calNextMonth{ float:right; }
+			
+			#calMonth, #calYear{
+				margin:0 5px 0 5px;
+				vertical-align: middle;
+			}
+			
+			#dayLetters{
+				float:left;
+				overflow:auto;
+				clear:both;
+				display:inline-block;
+				margin:0;
+				padding:0;
+			}
+			
+			.dayLetter, .dayLetterLast{
+				font-size: 10pt;
+				width:26px;
+				padding:2px;
+				float:left;
+				background-color:#C8E7FA;
+				border-radius: 4px;
+			}
+			
+			.dayLetter { margin:0 2px 2px 0; }
+			.dayLetterLast{ margin:0 0 2px 0; }
+			
+			#days{
+				overflow:auto;
+				clear:both;
+				margin:0;
+				padding:0;
+			}
+			
+			.day,.dayEndRow {
+				display:inline-block;
+				width:30px;
+				padding:4px 0 4px 0;
+				float:left;
+				border-radius:4px;
+				background-color:#C6F7F2;
+				cursor:pointer;
+			}
+			
+			.day { margin:2px 2px 0 0; }
+			
+			.dayEndRow{ margin:2px 0 0 0; }
+			
+			.day:hover, .dayEndrow:hover { background-color:yellow; }
+			
+			.wkRow{
+				display:inline-block;
+				clear:both;
+				float:left;
+				overflow:auto;
+				margin:0;
+				padding:0;
+			}
+			
+			.prevMonthDay, .nextMonthDay{
+				background-color:#F5F2F2;
+			}
