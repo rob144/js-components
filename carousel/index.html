@@ -1,0 +1,49 @@
+<html>
+
+    <head>
+        <title>Caro Test</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="caro.css" />
+        <link rel="stylesheet" type="text/css" href="caro-test.css" />
+        <script src="lib/jquery-1.11.3.js"></script>
+        <script src="caro.js"></script>
+    </head>
+
+    <body>
+
+        <h1>CAROUSEL TEST</h1>
+
+        <div class='caro-one'>
+            <div class='caro-window'>
+                <div class='caro-stage'>
+                    <div>Slide A</div>
+                    <div>Slide B</div>
+                    <div>Slide C</div>
+                </div>
+            </div>
+        </div>
+
+        <div class='caro-two'>
+            <div class='caro-window'>
+                <div class='caro-stage'>
+                    <div>Slide ONE</div>
+                    <div>Slide TWO</div>
+                    <div>Slide THREE</div>
+                    <div>Slide FOUR</div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+    <script type='text/javascript'>
+        var caro = ''; 
+        $(document).ready(function() {
+            c1 = new Caro('.caro-one');
+            c1.init();
+            c2 = new Caro('.caro-two');
+            c2.init();
+        });
+    </script>
+
+</html>
